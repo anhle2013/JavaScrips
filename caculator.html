@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CACULATOR</title>
+  
+</head>
+<body>
+    <h1>Caculator</h1>
+    <form action="">
+        <input type="number" id="idGiaTriA"> <input type="number" id="idGiaTriB"> <br> <br>
+        <input type="button" class="operator" onclick="tinh()" name="cong" value="+">Addition (+)</button>
+        <input type="button" class="operator" onclick="tinh()" name="tru" value="-">Subtraction (-)</button>
+        <input type="button" class="operator" onclick="tinh()" name="nhan" value="*">Multiplication (*)</button>
+        <input type="button" class="operator" onclick="tinh()" name="chia" value="/">Division (/)</button>
+    </form>
+
+    
+</body>
+
+<script>
+    function tinh() {
+        var a = parseInt  (document.getElementById("idGiaTriA").value);
+        var b = parseInt  (document.getElementById("idGiaTriB").value);
+       
+    }
+</script>
+<!--
+<script>
+   
+    function tong() {
+        var a = parseInt  (document.getElementById("idGiaTriA").value);
+        var b = parseInt  (document.getElementById("idGiaTriB").value);
+        var tong = a + b;
+        alert("Tổng bằng " + tong);
+    }
+    function hieu() {
+        var a = parseInt  (document.getElementById("idGiaTriA").value);
+        var b = parseInt  (document.getElementById("idGiaTriB").value);
+        var hieu = a - b;
+        alert("Hiệu bằng " + hieu);
+    }
+    function tich() {
+        var a = parseInt  (document.getElementById("idGiaTriA").value);
+        var b = parseInt  (document.getElementById("idGiaTriB").value);
+        var tich = a * b;
+        alert("Tích bằng " + tich);
+    }
+    function thuong() {
+        var a = parseInt  (document.getElementById("idGiaTriA").value);
+        var b = parseInt  (document.getElementById("idGiaTriB").value);
+        var thuong = a / b;
+        alert("Thương bằng " + thuong);
+    }
+</script> -->
+</html>

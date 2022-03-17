@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src=".//off.jpg" alt="" name="img" height="100px" onclick="control()">
+    <button name="turn" onclick="control()">Tunr on</button> 
+</body>
+<script>
+    debugger;
+    var lamp_off = true;
+    function control() {
+        var img= document.getElementsByName('img')[0];
+        var turn= document.getElementsByName('turn')[0];
+        if (lamp_off == true) {
+            img.src = ".//on.jpg";
+            turn.innerHTML = 'Turn off';
+            lamp_off = false;
+        } else {
+            img.src = ".//off.jpg";
+            turn.innerHTML = 'Turn on';
+            lamp_off = true;
+        }
+        
+        //document.getElementById('img1').src = ".//on.jpg";
+    }
+</script>
+</html>
